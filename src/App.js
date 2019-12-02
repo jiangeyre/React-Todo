@@ -69,12 +69,14 @@ class App extends React.Component {
         <div className="header">
           <h1>Let's get down to business!</h1>
         </div>
-        <ToDoForm 
-          value={this.state.toDo}
-          handleToDoChange={this.changeToDo}
-          handleAddToDo={this.addToDo}
-          handleClearToDos={this.clearCompletedToDos}
-        />
+        <div className="form">
+          <ToDoForm 
+            value={this.state.toDo}
+            handleToDoChange={this.changeToDo}
+            handleAddToDo={this.addToDo}
+            handleClearToDos={this.clearCompletedToDos}
+          />
+        </div>
         <ToDoList 
           handleToggleComplete={this.toggleToDoComplete}
           toDos={this.state.toDos}
