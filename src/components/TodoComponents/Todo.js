@@ -3,10 +3,11 @@ import React from 'react';
 const ToDo = props => {
     return(
         <div
+            className={`toDo${props.toDo.completed ? ' completed': ''}`}
             style={props.toDo.completed ? { textDecoration: 'line-through' } : null}
             onClick={() => props.handleToggleComplete(props.toDo.id)}
         >
-                {props.toDo.task}
+            <p>{props.toDo.task}</p>
         </div>
     )
 };
