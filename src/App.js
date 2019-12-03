@@ -27,6 +27,11 @@ class App extends React.Component {
           task: 'Work out',
           id: 13,
           completed: false
+        },
+        {
+          task: 'Cry in the shower',
+          id: 69,
+          completed: false
         }
       ],
       toDo: ''
